@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A16D7E81B818A95006F1440 /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A16D7DC1B818A95006F1440 /* Toast+UIView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0A16D7E91B818A95006F1440 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A16D7DE1B818A95006F1440 /* Toast.m */; };
+		0A16D7EC1B818C55006F1440 /* Trial_License.slm in Resources */ = {isa = PBXBuildFile; fileRef = 0A16D7EB1B818C55006F1440 /* Trial_License.slm */; };
+		0A16D7EE1B818C67006F1440 /* demoData.zip in Resources */ = {isa = PBXBuildFile; fileRef = 0A16D7ED1B818C67006F1440 /* demoData.zip */; };
+		0A16D7F11B818D01006F1440 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A16D7EF1B818D01006F1440 /* Icon.png */; };
+		0A16D7F21B818D01006F1440 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A16D7F01B818D01006F1440 /* Icon@2x.png */; };
+		0A16D7F61B81ADB6006F1440 /* 图标-放大-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A16D7F31B81ADB6006F1440 /* 图标-放大-72.png */; };
+		0A16D7F71B81ADB6006F1440 /* 图标-全幅-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A16D7F41B81ADB6006F1440 /* 图标-全幅-72.png */; };
+		0A16D7F81B81ADB6006F1440 /* 图标-缩小-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A16D7F51B81ADB6006F1440 /* 图标-缩小-72.png */; };
+		0A16D7FA1B81ADF6006F1440 /* btn_location_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A16D7F91B81ADF6006F1440 /* btn_location_normal.png */; };
+		0A16D8011B81B17A006F1440 /* MapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A16D8001B81B17A006F1440 /* MapManager.m */; };
+		0A16D8031B81B3FB006F1440 /* navi_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A16D8021B81B3FB006F1440 /* navi_start.png */; };
+		0A16D8061B81D687006F1440 /* plot_clear_noselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A16D8041B81D687006F1440 /* plot_clear_noselect.png */; };
+		0A16D8071B81D687006F1440 /* plot_clear_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A16D8051B81D687006F1440 /* plot_clear_select.png */; };
+		0A5BB90C1B7F3B3600563CF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5BB90B1B7F3B3600563CF8 /* main.m */; };
+		0A5BB90F1B7F3B3600563CF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5BB90E1B7F3B3600563CF8 /* AppDelegate.m */; };
+		0A5BB9121B7F3B3600563CF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5BB9111B7F3B3600563CF8 /* ViewController.m */; };
+		0A5BB9151B7F3B3600563CF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9131B7F3B3600563CF8 /* Main.storyboard */; };
+		0A5BB9171B7F3B3600563CF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9161B7F3B3600563CF8 /* Images.xcassets */; };
+		0A5BB91A1B7F3B3600563CF8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9181B7F3B3600563CF8 /* LaunchScreen.xib */; };
+		0A5BB97D1B7F3D0500563CF8 /* 主-位置上传-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9501B7F3D0500563CF8 /* 主-位置上传-未选.png */; };
+		0A5BB97E1B7F3D0500563CF8 /* 主-位置上传-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9511B7F3D0500563CF8 /* 主-位置上传-选中.png */; };
+		0A5BB97F1B7F3D0500563CF8 /* 主-发送数据-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9521B7F3D0500563CF8 /* 主-发送数据-未选.png */; };
+		0A5BB9801B7F3D0500563CF8 /* 主-发送数据-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9531B7F3D0500563CF8 /* 主-发送数据-选中.png */; };
+		0A5BB9811B7F3D0500563CF8 /* 主-多媒体-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9541B7F3D0500563CF8 /* 主-多媒体-未选.png */; };
+		0A5BB9821B7F3D0500563CF8 /* 主-多媒体-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9551B7F3D0500563CF8 /* 主-多媒体-选中.png */; };
+		0A5BB9831B7F3D0500563CF8 /* 主-文本信息-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9561B7F3D0500563CF8 /* 主-文本信息-未选.png */; };
+		0A5BB9841B7F3D0500563CF8 /* 主-文本信息-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9571B7F3D0500563CF8 /* 主-文本信息-选中.png */; };
+		0A5BB9851B7F3D0500563CF8 /* 主-标绘-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9581B7F3D0500563CF8 /* 主-标绘-未选.png */; };
+		0A5BB9861B7F3D0500563CF8 /* 主-标绘-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9591B7F3D0500563CF8 /* 主-标绘-选中.png */; };
+		0A5BB9871B7F3D0500563CF8 /* 主-消息开关-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB95A1B7F3D0500563CF8 /* 主-消息开关-未选.png */; };
+		0A5BB9881B7F3D0500563CF8 /* 主-消息开关-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB95B1B7F3D0500563CF8 /* 主-消息开关-选中.png */; };
+		0A5BB9891B7F3D0500563CF8 /* 主-消息查看-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB95C1B7F3D0500563CF8 /* 主-消息查看-未选.png */; };
+		0A5BB98A1B7F3D0500563CF8 /* 主-消息查看-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB95D1B7F3D0500563CF8 /* 主-消息查看-选中.png */; };
+		0A5BB98B1B7F3D0500563CF8 /* 主-间隔线.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB95E1B7F3D0500563CF8 /* 主-间隔线.png */; };
+		0A5BB98C1B7F3D0500563CF8 /* 多媒体-弹出框.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB95F1B7F3D0500563CF8 /* 多媒体-弹出框.png */; };
+		0A5BB98D1B7F3D0500563CF8 /* 多媒体-照片-未选】.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9601B7F3D0500563CF8 /* 多媒体-照片-未选】.png */; };
+		0A5BB98E1B7F3D0500563CF8 /* 多媒体-照片-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9611B7F3D0500563CF8 /* 多媒体-照片-选中.png */; };
+		0A5BB98F1B7F3D0500563CF8 /* 多媒体-视频-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9621B7F3D0500563CF8 /* 多媒体-视频-未选.png */; };
+		0A5BB9901B7F3D0500563CF8 /* 多媒体-视频-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9631B7F3D0500563CF8 /* 多媒体-视频-选中.png */; };
+		0A5BB9911B7F3D0500563CF8 /* 多媒体-音频-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9641B7F3D0500563CF8 /* 多媒体-音频-未选.png */; };
+		0A5BB9921B7F3D0500563CF8 /* 多媒体-音频-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9651B7F3D0500563CF8 /* 多媒体-音频-选中.png */; };
+		0A5BB9931B7F3D0500563CF8 /* 标绘-弹出框.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9661B7F3D0500563CF8 /* 标绘-弹出框.png */; };
+		0A5BB9941B7F3D0500563CF8 /* 标绘-手绘线-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9671B7F3D0500563CF8 /* 标绘-手绘线-未选.png */; };
+		0A5BB9951B7F3D0500563CF8 /* 标绘-手绘线-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9681B7F3D0500563CF8 /* 标绘-手绘线-选中.png */; };
+		0A5BB9961B7F3D0500563CF8 /* 标绘-手绘面-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9691B7F3D0500563CF8 /* 标绘-手绘面-未选.png */; };
+		0A5BB9971B7F3D0500563CF8 /* 标绘-手绘面-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB96A1B7F3D0500563CF8 /* 标绘-手绘面-选中.png */; };
+		0A5BB9981B7F3D0500563CF8 /* 标绘-标志-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB96B1B7F3D0500563CF8 /* 标绘-标志-未选.png */; };
+		0A5BB9991B7F3D0500563CF8 /* 标绘-标志-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB96C1B7F3D0500563CF8 /* 标绘-标志-选中.png */; };
+		0A5BB99A1B7F3D0500563CF8 /* 标绘-涂鸦-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB96D1B7F3D0500563CF8 /* 标绘-涂鸦-未选.png */; };
+		0A5BB99B1B7F3D0500563CF8 /* 标绘-涂鸦-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB96E1B7F3D0500563CF8 /* 标绘-涂鸦-选中.png */; };
+		0A5BB99C1B7F3D0500563CF8 /* 标绘-点符号-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB96F1B7F3D0500563CF8 /* 标绘-点符号-未选.png */; };
+		0A5BB99D1B7F3D0500563CF8 /* 标绘-点符号-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9701B7F3D0500563CF8 /* 标绘-点符号-选中.png */; };
+		0A5BB99E1B7F3D0500563CF8 /* 标绘-箭头-未选.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9711B7F3D0500563CF8 /* 标绘-箭头-未选.png */; };
+		0A5BB99F1B7F3D0500563CF8 /* 标绘-箭头-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9721B7F3D0500563CF8 /* 标绘-箭头-选中.png */; };
+		0A5BB9A01B7F3D0500563CF8 /* 照片-拍照-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9731B7F3D0500563CF8 /* 照片-拍照-选中.png */; };
+		0A5BB9A11B7F3D0500563CF8 /* 照片-拍照.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9741B7F3D0500563CF8 /* 照片-拍照.png */; };
+		0A5BB9A21B7F3D0500563CF8 /* 照片-确定-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9751B7F3D0500563CF8 /* 照片-确定-选中.png */; };
+		0A5BB9A31B7F3D0500563CF8 /* 照片-确定.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9761B7F3D0500563CF8 /* 照片-确定.png */; };
+		0A5BB9A41B7F3D0500563CF8 /* 视频-停止-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9771B7F3D0500563CF8 /* 视频-停止-选中.png */; };
+		0A5BB9A51B7F3D0500563CF8 /* 视频-停止.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9781B7F3D0500563CF8 /* 视频-停止.png */; };
+		0A5BB9A61B7F3D0500563CF8 /* 视频-录像-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB9791B7F3D0500563CF8 /* 视频-录像-选中.png */; };
+		0A5BB9A71B7F3D0500563CF8 /* 视频-录像.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB97A1B7F3D0500563CF8 /* 视频-录像.png */; };
+		0A5BB9A81B7F3D0500563CF8 /* 返回-当前.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB97B1B7F3D0500563CF8 /* 返回-当前.png */; };
+		0A5BB9A91B7F3D0500563CF8 /* 返回-选中.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BB97C1B7F3D0500563CF8 /* 返回-选中.png */; };
+		0A6FF0151BB3998D00B6A61A /* MessageQueue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6FF0141BB3998D00B6A61A /* MessageQueue.framework */; };
+		0A6FF0171BB3999600B6A61A /* SuperMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6FF0161BB3999600B6A61A /* SuperMap.framework */; };
+		0A6FF0211BB399BF00B6A61A /* libzip in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6FF0191BB399BF00B6A61A /* libzip */; };
+		0A6FF0231BB39A9E00B6A61A /* SuperMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A6FF0221BB39A9E00B6A61A /* SuperMap.bundle */; };
+		0A800A731B82BC9700316474 /* MuiColManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A800A721B82BC9700316474 /* MuiColManager.m */; };
+		0A800A761B83211000316474 /* PlotManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A800A751B83211000316474 /* PlotManager.m */; };
+		0A87E09B1B8AEE2000BCBD1C /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A87E09A1B8AEE2000BCBD1C /* location.png */; };
+		0A95483F1B85D33900C27105 /* TxtLookUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A95483E1B85D33900C27105 /* TxtLookUp.m */; };
+		0A9548461B85DC4E00C27105 /* TxtLookUpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9548441B85DC4E00C27105 /* TxtLookUpCell.m */; };
+		0A9548471B85DC4E00C27105 /* TxtLookUpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9548451B85DC4E00C27105 /* TxtLookUpCell.xib */; };
+		0AF0FB9D1B7F3DC8006CE903 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB8B1B7F3DC8006CE903 /* CFNetwork.framework */; };
+		0AF0FB9E1B7F3DC8006CE903 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB8C1B7F3DC8006CE903 /* CoreLocation.framework */; };
+		0AF0FB9F1B7F3DC8006CE903 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB8D1B7F3DC8006CE903 /* UIKit.framework */; };
+		0AF0FBA01B7F3DC8006CE903 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB8E1B7F3DC8006CE903 /* QuartzCore.framework */; };
+		0AF0FBA11B7F3DC8006CE903 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB8F1B7F3DC8006CE903 /* OpenGLES.framework */; };
+		0AF0FBA21B7F3DC8006CE903 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB901B7F3DC8006CE903 /* CoreGraphics.framework */; };
+		0AF0FBA31B7F3DC8006CE903 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB911B7F3DC8006CE903 /* Security.framework */; };
+		0AF0FBA41B7F3DC8006CE903 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB921B7F3DC8006CE903 /* AudioToolbox.framework */; };
+		0AF0FBA51B7F3DC8006CE903 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB931B7F3DC8006CE903 /* CoreText.framework */; };
+		0AF0FBA61B7F3DC8006CE903 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB941B7F3DC8006CE903 /* AVFoundation.framework */; };
+		0AF0FBA71B7F3DC8006CE903 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB951B7F3DC8006CE903 /* MediaPlayer.framework */; };
+		0AF0FBA81B7F3DC8006CE903 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB961B7F3DC8006CE903 /* MobileCoreServices.framework */; };
+		0AF0FBA91B7F3DC8006CE903 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB971B7F3DC8006CE903 /* AddressBook.framework */; };
+		0AF0FBAA1B7F3DC8006CE903 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB981B7F3DC8006CE903 /* SystemConfiguration.framework */; };
+		0AF0FBAB1B7F3DC8006CE903 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AF0FB991B7F3DC8006CE903 /* CoreTelephony.framework */; };
+		0AFF83A71B84155F008D4163 /* ArrowCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF83A61B84155F008D4163 /* ArrowCollectionView.m */; };
+		0AFF83B11B8422CB008D4163 /* 功能图标_关闭.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AFF83B01B8422CB008D4163 /* 功能图标_关闭.png */; };
+		0AFF83B31B842E7C008D4163 /* codesLib.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0AFF83B21B842E7C008D4163 /* codesLib.bundle */; };
+		0AFF83B81B845EDC008D4163 /* MQManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF83B71B845EDC008D4163 /* MQManager.m */; };
+		0AFF83BC1B846099008D4163 /* MQToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFF83BB1B846099008D4163 /* MQToolKit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A16D7D61B8177AA006F1440 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0A16D7DB1B818A95006F1440 /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		0A16D7DC1B818A95006F1440 /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
+		0A16D7DD1B818A95006F1440 /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
+		0A16D7DE1B818A95006F1440 /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
+		0A16D7EB1B818C55006F1440 /* Trial_License.slm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Trial_License.slm; sourceTree = SOURCE_ROOT; };
+		0A16D7ED1B818C67006F1440 /* demoData.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = demoData.zip; sourceTree = SOURCE_ROOT; };
+		0A16D7EF1B818D01006F1440 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
+		0A16D7F01B818D01006F1440 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		0A16D7F31B81ADB6006F1440 /* 图标-放大-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-放大-72.png"; sourceTree = "<group>"; };
+		0A16D7F41B81ADB6006F1440 /* 图标-全幅-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-全幅-72.png"; sourceTree = "<group>"; };
+		0A16D7F51B81ADB6006F1440 /* 图标-缩小-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图标-缩小-72.png"; sourceTree = "<group>"; };
+		0A16D7F91B81ADF6006F1440 /* btn_location_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_location_normal.png; sourceTree = "<group>"; };
+		0A16D7FF1B81B17A006F1440 /* MapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapManager.h; path = Map/MapManager.h; sourceTree = "<group>"; };
+		0A16D8001B81B17A006F1440 /* MapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapManager.m; path = Map/MapManager.m; sourceTree = "<group>"; };
+		0A16D8021B81B3FB006F1440 /* navi_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navi_start.png; sourceTree = "<group>"; };
+		0A16D8041B81D687006F1440 /* plot_clear_noselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plot_clear_noselect.png; sourceTree = "<group>"; };
+		0A16D8051B81D687006F1440 /* plot_clear_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plot_clear_select.png; sourceTree = "<group>"; };
+		0A5BB9061B7F3B3600563CF8 /* MessageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A5BB90A1B7F3B3600563CF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A5BB90B1B7F3B3600563CF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A5BB90D1B7F3B3600563CF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A5BB90E1B7F3B3600563CF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A5BB9101B7F3B3600563CF8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A5BB9111B7F3B3600563CF8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A5BB9141B7F3B3600563CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A5BB9161B7F3B3600563CF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0A5BB9191B7F3B3600563CF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		0A5BB9501B7F3D0500563CF8 /* 主-位置上传-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-位置上传-未选.png"; sourceTree = "<group>"; };
+		0A5BB9511B7F3D0500563CF8 /* 主-位置上传-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-位置上传-选中.png"; sourceTree = "<group>"; };
+		0A5BB9521B7F3D0500563CF8 /* 主-发送数据-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-发送数据-未选.png"; sourceTree = "<group>"; };
+		0A5BB9531B7F3D0500563CF8 /* 主-发送数据-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-发送数据-选中.png"; sourceTree = "<group>"; };
+		0A5BB9541B7F3D0500563CF8 /* 主-多媒体-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-多媒体-未选.png"; sourceTree = "<group>"; };
+		0A5BB9551B7F3D0500563CF8 /* 主-多媒体-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-多媒体-选中.png"; sourceTree = "<group>"; };
+		0A5BB9561B7F3D0500563CF8 /* 主-文本信息-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-文本信息-未选.png"; sourceTree = "<group>"; };
+		0A5BB9571B7F3D0500563CF8 /* 主-文本信息-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-文本信息-选中.png"; sourceTree = "<group>"; };
+		0A5BB9581B7F3D0500563CF8 /* 主-标绘-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-标绘-未选.png"; sourceTree = "<group>"; };
+		0A5BB9591B7F3D0500563CF8 /* 主-标绘-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-标绘-选中.png"; sourceTree = "<group>"; };
+		0A5BB95A1B7F3D0500563CF8 /* 主-消息开关-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-消息开关-未选.png"; sourceTree = "<group>"; };
+		0A5BB95B1B7F3D0500563CF8 /* 主-消息开关-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-消息开关-选中.png"; sourceTree = "<group>"; };
+		0A5BB95C1B7F3D0500563CF8 /* 主-消息查看-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-消息查看-未选.png"; sourceTree = "<group>"; };
+		0A5BB95D1B7F3D0500563CF8 /* 主-消息查看-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-消息查看-选中.png"; sourceTree = "<group>"; };
+		0A5BB95E1B7F3D0500563CF8 /* 主-间隔线.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "主-间隔线.png"; sourceTree = "<group>"; };
+		0A5BB95F1B7F3D0500563CF8 /* 多媒体-弹出框.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多媒体-弹出框.png"; sourceTree = "<group>"; };
+		0A5BB9601B7F3D0500563CF8 /* 多媒体-照片-未选】.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多媒体-照片-未选】.png"; sourceTree = "<group>"; };
+		0A5BB9611B7F3D0500563CF8 /* 多媒体-照片-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多媒体-照片-选中.png"; sourceTree = "<group>"; };
+		0A5BB9621B7F3D0500563CF8 /* 多媒体-视频-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多媒体-视频-未选.png"; sourceTree = "<group>"; };
+		0A5BB9631B7F3D0500563CF8 /* 多媒体-视频-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多媒体-视频-选中.png"; sourceTree = "<group>"; };
+		0A5BB9641B7F3D0500563CF8 /* 多媒体-音频-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多媒体-音频-未选.png"; sourceTree = "<group>"; };
+		0A5BB9651B7F3D0500563CF8 /* 多媒体-音频-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多媒体-音频-选中.png"; sourceTree = "<group>"; };
+		0A5BB9661B7F3D0500563CF8 /* 标绘-弹出框.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标绘-弹出框.png"; sourceTree = "<group>"; };
+		0A5BB9671B7F3D0500563CF8 /* 标绘-手绘线-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标绘-手绘线-未选.png"; sourceTree = "<group>"; };
+		0A5BB9681B7F3D0500563CF8 /* 标绘-手绘线-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标绘-手绘线-选中.png"; sourceTree = "<group>"; };
+		0A5BB9691B7F3D0500563CF8 /* 标绘-手绘面-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标绘-手绘面-未选.png"; sourceTree = "<group>"; };
+		0A5BB96A1B7F3D0500563CF8 /* 标绘-手绘面-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标绘-手绘面-选中.png"; sourceTree = "<group>"; };
+		0A5BB96B1B7F3D0500563CF8 /* 标绘-标志-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标绘-标志-未选.png"; sourceTree = "<group>"; };
+		0A5BB96C1B7F3D0500563CF8 /* 标绘-标志-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标绘-标志-选中.png"; sourceTree = "<group>"; };
+		0A5BB96D1B7F3D0500563CF8 /* 标绘-涂鸦-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标绘-涂鸦-未选.png"; sourceTree = "<group>"; };
+		0A5BB96E1B7F3D0500563CF8 /* 标绘-涂鸦-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标绘-涂鸦-选中.png"; sourceTree = "<group>"; };
+		0A5BB96F1B7F3D0500563CF8 /* 标绘-点符号-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标绘-点符号-未选.png"; sourceTree = "<group>"; };
+		0A5BB9701B7F3D0500563CF8 /* 标绘-点符号-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标绘-点符号-选中.png"; sourceTree = "<group>"; };
+		0A5BB9711B7F3D0500563CF8 /* 标绘-箭头-未选.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标绘-箭头-未选.png"; sourceTree = "<group>"; };
+		0A5BB9721B7F3D0500563CF8 /* 标绘-箭头-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "标绘-箭头-选中.png"; sourceTree = "<group>"; };
+		0A5BB9731B7F3D0500563CF8 /* 照片-拍照-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照片-拍照-选中.png"; sourceTree = "<group>"; };
+		0A5BB9741B7F3D0500563CF8 /* 照片-拍照.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照片-拍照.png"; sourceTree = "<group>"; };
+		0A5BB9751B7F3D0500563CF8 /* 照片-确定-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照片-确定-选中.png"; sourceTree = "<group>"; };
+		0A5BB9761B7F3D0500563CF8 /* 照片-确定.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照片-确定.png"; sourceTree = "<group>"; };
+		0A5BB9771B7F3D0500563CF8 /* 视频-停止-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "视频-停止-选中.png"; sourceTree = "<group>"; };
+		0A5BB9781B7F3D0500563CF8 /* 视频-停止.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "视频-停止.png"; sourceTree = "<group>"; };
+		0A5BB9791B7F3D0500563CF8 /* 视频-录像-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "视频-录像-选中.png"; sourceTree = "<group>"; };
+		0A5BB97A1B7F3D0500563CF8 /* 视频-录像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "视频-录像.png"; sourceTree = "<group>"; };
+		0A5BB97B1B7F3D0500563CF8 /* 返回-当前.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回-当前.png"; sourceTree = "<group>"; };
+		0A5BB97C1B7F3D0500563CF8 /* 返回-选中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回-选中.png"; sourceTree = "<group>"; };
+		0A6FF0141BB3998D00B6A61A /* MessageQueue.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageQueue.framework; path = ../../../../../../../Library/SuperMap/SDKs/MessageQueue.framework; sourceTree = "<group>"; };
+		0A6FF0161BB3999600B6A61A /* SuperMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SuperMap.framework; path = ../../../../../../../Library/SuperMap/SDKs/iPhoneOS.sdk/SuperMap.framework; sourceTree = "<group>"; };
+		0A6FF0191BB399BF00B6A61A /* libzip */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzip; sourceTree = "<group>"; };
+		0A6FF01B1BB399BF00B6A61A /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		0A6FF01C1BB399BF00B6A61A /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		0A6FF01D1BB399BF00B6A61A /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		0A6FF01E1BB399BF00B6A61A /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		0A6FF01F1BB399BF00B6A61A /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		0A6FF0201BB399BF00B6A61A /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		0A6FF0221BB39A9E00B6A61A /* SuperMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SuperMap.bundle; path = ../../../../../../../Library/SuperMap/SDKs/iPhoneOS.sdk/SuperMap.framework/Versions/A/Resources/SuperMap.bundle; sourceTree = "<group>"; };
+		0A800A711B82BC9700316474 /* MuiColManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MuiColManager.h; path = MulCol/MuiColManager.h; sourceTree = "<group>"; };
+		0A800A721B82BC9700316474 /* MuiColManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MuiColManager.m; path = MulCol/MuiColManager.m; sourceTree = "<group>"; };
+		0A800A741B83211000316474 /* PlotManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlotManager.h; path = Plot/PlotManager.h; sourceTree = "<group>"; };
+		0A800A751B83211000316474 /* PlotManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlotManager.m; path = Plot/PlotManager.m; sourceTree = "<group>"; };
+		0A87E09A1B8AEE2000BCBD1C /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		0A95483D1B85D33900C27105 /* TxtLookUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TxtLookUp.h; path = MQ/TxtLookUp.h; sourceTree = "<group>"; };
+		0A95483E1B85D33900C27105 /* TxtLookUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TxtLookUp.m; path = MQ/TxtLookUp.m; sourceTree = "<group>"; };
+		0A9548431B85DC4E00C27105 /* TxtLookUpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TxtLookUpCell.h; path = MQ/TxtLookUpCell.h; sourceTree = "<group>"; };
+		0A9548441B85DC4E00C27105 /* TxtLookUpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TxtLookUpCell.m; path = MQ/TxtLookUpCell.m; sourceTree = "<group>"; };
+		0A9548451B85DC4E00C27105 /* TxtLookUpCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TxtLookUpCell.xib; path = MQ/TxtLookUpCell.xib; sourceTree = "<group>"; };
+		0AF0FB8B1B7F3DC8006CE903 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0AF0FB8C1B7F3DC8006CE903 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0AF0FB8D1B7F3DC8006CE903 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0AF0FB8E1B7F3DC8006CE903 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0AF0FB8F1B7F3DC8006CE903 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0AF0FB901B7F3DC8006CE903 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0AF0FB911B7F3DC8006CE903 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0AF0FB921B7F3DC8006CE903 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0AF0FB931B7F3DC8006CE903 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		0AF0FB941B7F3DC8006CE903 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0AF0FB951B7F3DC8006CE903 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0AF0FB961B7F3DC8006CE903 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0AF0FB971B7F3DC8006CE903 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		0AF0FB981B7F3DC8006CE903 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0AF0FB991B7F3DC8006CE903 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0AFF83A51B84155F008D4163 /* ArrowCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrowCollectionView.h; path = Plot/ArrowCollectionView.h; sourceTree = "<group>"; };
+		0AFF83A61B84155F008D4163 /* ArrowCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArrowCollectionView.m; path = Plot/ArrowCollectionView.m; sourceTree = "<group>"; };
+		0AFF83B01B8422CB008D4163 /* 功能图标_关闭.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "功能图标_关闭.png"; sourceTree = "<group>"; };
+		0AFF83B21B842E7C008D4163 /* codesLib.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = codesLib.bundle; sourceTree = SOURCE_ROOT; };
+		0AFF83B61B845EDC008D4163 /* MQManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MQManager.h; path = MQ/MQManager.h; sourceTree = "<group>"; };
+		0AFF83B71B845EDC008D4163 /* MQManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MQManager.m; path = MQ/MQManager.m; sourceTree = "<group>"; };
+		0AFF83BA1B846099008D4163 /* MQToolKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MQToolKit.h; path = ToolKit/MQToolKit.h; sourceTree = "<group>"; };
+		0AFF83BB1B846099008D4163 /* MQToolKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MQToolKit.m; path = ToolKit/MQToolKit.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A5BB9031B7F3B3600563CF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF0FBA91B7F3DC8006CE903 /* AddressBook.framework in Frameworks */,
+				0A6FF0171BB3999600B6A61A /* SuperMap.framework in Frameworks */,
+				0AF0FBA11B7F3DC8006CE903 /* OpenGLES.framework in Frameworks */,
+				0AF0FBA81B7F3DC8006CE903 /* MobileCoreServices.framework in Frameworks */,
+				0AF0FBA71B7F3DC8006CE903 /* MediaPlayer.framework in Frameworks */,
+				0AF0FBAB1B7F3DC8006CE903 /* CoreTelephony.framework in Frameworks */,
+				0AF0FB9E1B7F3DC8006CE903 /* CoreLocation.framework in Frameworks */,
+				0AF0FB9D1B7F3DC8006CE903 /* CFNetwork.framework in Frameworks */,
+				0A6FF0211BB399BF00B6A61A /* libzip in Frameworks */,
+				0AF0FBAA1B7F3DC8006CE903 /* SystemConfiguration.framework in Frameworks */,
+				0AF0FBA51B7F3DC8006CE903 /* CoreText.framework in Frameworks */,
+				0AF0FBA01B7F3DC8006CE903 /* QuartzCore.framework in Frameworks */,
+				0AF0FBA21B7F3DC8006CE903 /* CoreGraphics.framework in Frameworks */,
+				0AF0FBA61B7F3DC8006CE903 /* AVFoundation.framework in Frameworks */,
+				0AF0FBA41B7F3DC8006CE903 /* AudioToolbox.framework in Frameworks */,
+				0AF0FBA31B7F3DC8006CE903 /* Security.framework in Frameworks */,
+				0AF0FB9F1B7F3DC8006CE903 /* UIKit.framework in Frameworks */,
+				0A6FF0151BB3998D00B6A61A /* MessageQueue.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A16D7D91B818A7A006F1440 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0A6FF0181BB399BF00B6A61A /* zip */,
+				0AFF83B91B84606C008D4163 /* ToolKit */,
+				0A16D7FE1B81B130006F1440 /* Map */,
+				0A16D7FD1B81B0C5006F1440 /* MQ */,
+				0A16D7FC1B81B0BD006F1440 /* Plot */,
+				0A16D7FB1B81B0A4006F1440 /* MulCol */,
+				0A16D7DA1B818A95006F1440 /* Toast */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		0A16D7DA1B818A95006F1440 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				0A16D7DB1B818A95006F1440 /* Toast+UIView.h */,
+				0A16D7DC1B818A95006F1440 /* Toast+UIView.m */,
+				0A16D7DD1B818A95006F1440 /* Toast.h */,
+				0A16D7DE1B818A95006F1440 /* Toast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		0A16D7FB1B81B0A4006F1440 /* MulCol */ = {
+			isa = PBXGroup;
+			children = (
+				0A800A711B82BC9700316474 /* MuiColManager.h */,
+				0A800A721B82BC9700316474 /* MuiColManager.m */,
+			);
+			name = MulCol;
+			sourceTree = "<group>";
+		};
+		0A16D7FC1B81B0BD006F1440 /* Plot */ = {
+			isa = PBXGroup;
+			children = (
+				0A800A741B83211000316474 /* PlotManager.h */,
+				0A800A751B83211000316474 /* PlotManager.m */,
+				0AFF83A51B84155F008D4163 /* ArrowCollectionView.h */,
+				0AFF83A61B84155F008D4163 /* ArrowCollectionView.m */,
+			);
+			name = Plot;
+			sourceTree = "<group>";
+		};
+		0A16D7FD1B81B0C5006F1440 /* MQ */ = {
+			isa = PBXGroup;
+			children = (
+				0AFF83B61B845EDC008D4163 /* MQManager.h */,
+				0AFF83B71B845EDC008D4163 /* MQManager.m */,
+				0A95483D1B85D33900C27105 /* TxtLookUp.h */,
+				0A95483E1B85D33900C27105 /* TxtLookUp.m */,
+				0A9548431B85DC4E00C27105 /* TxtLookUpCell.h */,
+				0A9548441B85DC4E00C27105 /* TxtLookUpCell.m */,
+				0A9548451B85DC4E00C27105 /* TxtLookUpCell.xib */,
+			);
+			name = MQ;
+			sourceTree = "<group>";
+		};
+		0A16D7FE1B81B130006F1440 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				0A16D7FF1B81B17A006F1440 /* MapManager.h */,
+				0A16D8001B81B17A006F1440 /* MapManager.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		0A5BB8FD1B7F3B3600563CF8 = {
+			isa = PBXGroup;
+			children = (
+				0A16D7D91B818A7A006F1440 /* Classes */,
+				0A5BBD981B7F3D8900563CF8 /* Frameworks */,
+				0A5BB9081B7F3B3600563CF8 /* MessageDemo */,
+				0A5BB9071B7F3B3600563CF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A5BB9071B7F3B3600563CF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A5BB9061B7F3B3600563CF8 /* MessageDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A5BB9081B7F3B3600563CF8 /* MessageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0A5BB90D1B7F3B3600563CF8 /* AppDelegate.h */,
+				0A5BB90E1B7F3B3600563CF8 /* AppDelegate.m */,
+				0A5BB9101B7F3B3600563CF8 /* ViewController.h */,
+				0A5BB9111B7F3B3600563CF8 /* ViewController.m */,
+				0A5BB9131B7F3B3600563CF8 /* Main.storyboard */,
+				0A5BB9161B7F3B3600563CF8 /* Images.xcassets */,
+				0A5BB9181B7F3B3600563CF8 /* LaunchScreen.xib */,
+				0A5BB9091B7F3B3600563CF8 /* Supporting Files */,
+			);
+			path = MessageDemo;
+			sourceTree = "<group>";
+		};
+		0A5BB9091B7F3B3600563CF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AFF83B21B842E7C008D4163 /* codesLib.bundle */,
+				0A16D7ED1B818C67006F1440 /* demoData.zip */,
+				0A16D7EB1B818C55006F1440 /* Trial_License.slm */,
+				0A5BB94F1B7F3D0500563CF8 /* 消息总线-img */,
+				0A5BB90A1B7F3B3600563CF8 /* Info.plist */,
+				0A5BB90B1B7F3B3600563CF8 /* main.m */,
+				0A16D7D61B8177AA006F1440 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A5BB94F1B7F3D0500563CF8 /* 消息总线-img */ = {
+			isa = PBXGroup;
+			children = (
+				0A87E09A1B8AEE2000BCBD1C /* location.png */,
+				0AFF83B01B8422CB008D4163 /* 功能图标_关闭.png */,
+				0A16D8041B81D687006F1440 /* plot_clear_noselect.png */,
+				0A16D8051B81D687006F1440 /* plot_clear_select.png */,
+				0A16D8021B81B3FB006F1440 /* navi_start.png */,
+				0A16D7F91B81ADF6006F1440 /* btn_location_normal.png */,
+				0A16D7F31B81ADB6006F1440 /* 图标-放大-72.png */,
+				0A16D7F41B81ADB6006F1440 /* 图标-全幅-72.png */,
+				0A16D7F51B81ADB6006F1440 /* 图标-缩小-72.png */,
+				0A16D7EF1B818D01006F1440 /* Icon.png */,
+				0A16D7F01B818D01006F1440 /* Icon@2x.png */,
+				0A5BB9501B7F3D0500563CF8 /* 主-位置上传-未选.png */,
+				0A5BB9511B7F3D0500563CF8 /* 主-位置上传-选中.png */,
+				0A5BB9521B7F3D0500563CF8 /* 主-发送数据-未选.png */,
+				0A5BB9531B7F3D0500563CF8 /* 主-发送数据-选中.png */,
+				0A5BB9541B7F3D0500563CF8 /* 主-多媒体-未选.png */,
+				0A5BB9551B7F3D0500563CF8 /* 主-多媒体-选中.png */,
+				0A5BB9561B7F3D0500563CF8 /* 主-文本信息-未选.png */,
+				0A5BB9571B7F3D0500563CF8 /* 主-文本信息-选中.png */,
+				0A5BB9581B7F3D0500563CF8 /* 主-标绘-未选.png */,
+				0A5BB9591B7F3D0500563CF8 /* 主-标绘-选中.png */,
+				0A5BB95A1B7F3D0500563CF8 /* 主-消息开关-未选.png */,
+				0A5BB95B1B7F3D0500563CF8 /* 主-消息开关-选中.png */,
+				0A5BB95C1B7F3D0500563CF8 /* 主-消息查看-未选.png */,
+				0A5BB95D1B7F3D0500563CF8 /* 主-消息查看-选中.png */,
+				0A5BB95E1B7F3D0500563CF8 /* 主-间隔线.png */,
+				0A5BB95F1B7F3D0500563CF8 /* 多媒体-弹出框.png */,
+				0A5BB9601B7F3D0500563CF8 /* 多媒体-照片-未选】.png */,
+				0A5BB9611B7F3D0500563CF8 /* 多媒体-照片-选中.png */,
+				0A5BB9621B7F3D0500563CF8 /* 多媒体-视频-未选.png */,
+				0A5BB9631B7F3D0500563CF8 /* 多媒体-视频-选中.png */,
+				0A5BB9641B7F3D0500563CF8 /* 多媒体-音频-未选.png */,
+				0A5BB9651B7F3D0500563CF8 /* 多媒体-音频-选中.png */,
+				0A5BB9661B7F3D0500563CF8 /* 标绘-弹出框.png */,
+				0A5BB9671B7F3D0500563CF8 /* 标绘-手绘线-未选.png */,
+				0A5BB9681B7F3D0500563CF8 /* 标绘-手绘线-选中.png */,
+				0A5BB9691B7F3D0500563CF8 /* 标绘-手绘面-未选.png */,
+				0A5BB96A1B7F3D0500563CF8 /* 标绘-手绘面-选中.png */,
+				0A5BB96B1B7F3D0500563CF8 /* 标绘-标志-未选.png */,
+				0A5BB96C1B7F3D0500563CF8 /* 标绘-标志-选中.png */,
+				0A5BB96D1B7F3D0500563CF8 /* 标绘-涂鸦-未选.png */,
+				0A5BB96E1B7F3D0500563CF8 /* 标绘-涂鸦-选中.png */,
+				0A5BB96F1B7F3D0500563CF8 /* 标绘-点符号-未选.png */,
+				0A5BB9701B7F3D0500563CF8 /* 标绘-点符号-选中.png */,
+				0A5BB9711B7F3D0500563CF8 /* 标绘-箭头-未选.png */,
+				0A5BB9721B7F3D0500563CF8 /* 标绘-箭头-选中.png */,
+				0A5BB9731B7F3D0500563CF8 /* 照片-拍照-选中.png */,
+				0A5BB9741B7F3D0500563CF8 /* 照片-拍照.png */,
+				0A5BB9751B7F3D0500563CF8 /* 照片-确定-选中.png */,
+				0A5BB9761B7F3D0500563CF8 /* 照片-确定.png */,
+				0A5BB9771B7F3D0500563CF8 /* 视频-停止-选中.png */,
+				0A5BB9781B7F3D0500563CF8 /* 视频-停止.png */,
+				0A5BB9791B7F3D0500563CF8 /* 视频-录像-选中.png */,
+				0A5BB97A1B7F3D0500563CF8 /* 视频-录像.png */,
+				0A5BB97B1B7F3D0500563CF8 /* 返回-当前.png */,
+				0A5BB97C1B7F3D0500563CF8 /* 返回-选中.png */,
+			);
+			path = "消息总线-img";
+			sourceTree = SOURCE_ROOT;
+		};
+		0A5BBD981B7F3D8900563CF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A6FF0221BB39A9E00B6A61A /* SuperMap.bundle */,
+				0A6FF0161BB3999600B6A61A /* SuperMap.framework */,
+				0A6FF0141BB3998D00B6A61A /* MessageQueue.framework */,
+				0AF0FB8B1B7F3DC8006CE903 /* CFNetwork.framework */,
+				0AF0FB8C1B7F3DC8006CE903 /* CoreLocation.framework */,
+				0AF0FB8D1B7F3DC8006CE903 /* UIKit.framework */,
+				0AF0FB8E1B7F3DC8006CE903 /* QuartzCore.framework */,
+				0AF0FB8F1B7F3DC8006CE903 /* OpenGLES.framework */,
+				0AF0FB901B7F3DC8006CE903 /* CoreGraphics.framework */,
+				0AF0FB911B7F3DC8006CE903 /* Security.framework */,
+				0AF0FB921B7F3DC8006CE903 /* AudioToolbox.framework */,
+				0AF0FB931B7F3DC8006CE903 /* CoreText.framework */,
+				0AF0FB941B7F3DC8006CE903 /* AVFoundation.framework */,
+				0AF0FB951B7F3DC8006CE903 /* MediaPlayer.framework */,
+				0AF0FB961B7F3DC8006CE903 /* MobileCoreServices.framework */,
+				0AF0FB971B7F3DC8006CE903 /* AddressBook.framework */,
+				0AF0FB981B7F3DC8006CE903 /* SystemConfiguration.framework */,
+				0AF0FB991B7F3DC8006CE903 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A6FF0181BB399BF00B6A61A /* zip */ = {
+			isa = PBXGroup;
+			children = (
+				0A6FF0191BB399BF00B6A61A /* libzip */,
+				0A6FF01A1BB399BF00B6A61A /* minizip */,
+				0A6FF0201BB399BF00B6A61A /* ZipArchive.h */,
+			);
+			path = zip;
+			sourceTree = "<group>";
+		};
+		0A6FF01A1BB399BF00B6A61A /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				0A6FF01B1BB399BF00B6A61A /* crypt.h */,
+				0A6FF01C1BB399BF00B6A61A /* ioapi.h */,
+				0A6FF01D1BB399BF00B6A61A /* mztools.h */,
+				0A6FF01E1BB399BF00B6A61A /* unzip.h */,
+				0A6FF01F1BB399BF00B6A61A /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		0AFF83B91B84606C008D4163 /* ToolKit */ = {
+			isa = PBXGroup;
+			children = (
+				0AFF83BA1B846099008D4163 /* MQToolKit.h */,
+				0AFF83BB1B846099008D4163 /* MQToolKit.m */,
+			);
+			name = ToolKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A5BB9051B7F3B3600563CF8 /* MessageDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A5BB9291B7F3B3600563CF8 /* Build configuration list for PBXNativeTarget "MessageDemo" */;
+			buildPhases = (
+				0A5BB9021B7F3B3600563CF8 /* Sources */,
+				0A5BB9031B7F3B3600563CF8 /* Frameworks */,
+				0A5BB9041B7F3B3600563CF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageDemo;
+			productName = MessageDemo;
+			productReference = 0A5BB9061B7F3B3600563CF8 /* MessageDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A5BB8FE1B7F3B3600563CF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "imobile-xzy";
+				TargetAttributes = {
+					0A5BB9051B7F3B3600563CF8 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 0A5BB9011B7F3B3600563CF8 /* Build configuration list for PBXProject "MessageDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A5BB8FD1B7F3B3600563CF8;
+			productRefGroup = 0A5BB9071B7F3B3600563CF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A5BB9051B7F3B3600563CF8 /* MessageDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A5BB9041B7F3B3600563CF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5BB9881B7F3D0500563CF8 /* 主-消息开关-选中.png in Resources */,
+				0A5BB9A21B7F3D0500563CF8 /* 照片-确定-选中.png in Resources */,
+				0A16D7EC1B818C55006F1440 /* Trial_License.slm in Resources */,
+				0A16D7F71B81ADB6006F1440 /* 图标-全幅-72.png in Resources */,
+				0A16D7EE1B818C67006F1440 /* demoData.zip in Resources */,
+				0A5BB99E1B7F3D0500563CF8 /* 标绘-箭头-未选.png in Resources */,
+				0A5BB9941B7F3D0500563CF8 /* 标绘-手绘线-未选.png in Resources */,
+				0A5BB9861B7F3D0500563CF8 /* 主-标绘-选中.png in Resources */,
+				0A5BB9901B7F3D0500563CF8 /* 多媒体-视频-选中.png in Resources */,
+				0A5BB9151B7F3B3600563CF8 /* Main.storyboard in Resources */,
+				0A5BB9981B7F3D0500563CF8 /* 标绘-标志-未选.png in Resources */,
+				0A5BB9951B7F3D0500563CF8 /* 标绘-手绘线-选中.png in Resources */,
+				0A5BB9A61B7F3D0500563CF8 /* 视频-录像-选中.png in Resources */,
+				0A5BB9A31B7F3D0500563CF8 /* 照片-确定.png in Resources */,
+				0A5BB98F1B7F3D0500563CF8 /* 多媒体-视频-未选.png in Resources */,
+				0A5BB98C1B7F3D0500563CF8 /* 多媒体-弹出框.png in Resources */,
+				0A5BB9A01B7F3D0500563CF8 /* 照片-拍照-选中.png in Resources */,
+				0A5BB9A41B7F3D0500563CF8 /* 视频-停止-选中.png in Resources */,
+				0A16D7F61B81ADB6006F1440 /* 图标-放大-72.png in Resources */,
+				0A5BB9871B7F3D0500563CF8 /* 主-消息开关-未选.png in Resources */,
+				0A5BB9831B7F3D0500563CF8 /* 主-文本信息-未选.png in Resources */,
+				0A16D7F11B818D01006F1440 /* Icon.png in Resources */,
+				0A5BB9911B7F3D0500563CF8 /* 多媒体-音频-未选.png in Resources */,
+				0A5BB9991B7F3D0500563CF8 /* 标绘-标志-选中.png in Resources */,
+				0A16D8071B81D687006F1440 /* plot_clear_select.png in Resources */,
+				0A5BB99D1B7F3D0500563CF8 /* 标绘-点符号-选中.png in Resources */,
+				0A9548471B85DC4E00C27105 /* TxtLookUpCell.xib in Resources */,
+				0A5BB9821B7F3D0500563CF8 /* 主-多媒体-选中.png in Resources */,
+				0A5BB99A1B7F3D0500563CF8 /* 标绘-涂鸦-未选.png in Resources */,
+				0A5BB9A71B7F3D0500563CF8 /* 视频-录像.png in Resources */,
+				0A5BB97D1B7F3D0500563CF8 /* 主-位置上传-未选.png in Resources */,
+				0AFF83B11B8422CB008D4163 /* 功能图标_关闭.png in Resources */,
+				0AFF83B31B842E7C008D4163 /* codesLib.bundle in Resources */,
+				0A5BB99C1B7F3D0500563CF8 /* 标绘-点符号-未选.png in Resources */,
+				0A5BB98B1B7F3D0500563CF8 /* 主-间隔线.png in Resources */,
+				0A87E09B1B8AEE2000BCBD1C /* location.png in Resources */,
+				0A6FF0231BB39A9E00B6A61A /* SuperMap.bundle in Resources */,
+				0A5BB91A1B7F3B3600563CF8 /* LaunchScreen.xib in Resources */,
+				0A5BB9961B7F3D0500563CF8 /* 标绘-手绘面-未选.png in Resources */,
+				0A5BB9851B7F3D0500563CF8 /* 主-标绘-未选.png in Resources */,
+				0A5BB9171B7F3B3600563CF8 /* Images.xcassets in Resources */,
+				0A5BB97F1B7F3D0500563CF8 /* 主-发送数据-未选.png in Resources */,
+				0A16D7F81B81ADB6006F1440 /* 图标-缩小-72.png in Resources */,
+				0A16D8061B81D687006F1440 /* plot_clear_noselect.png in Resources */,
+				0A16D8031B81B3FB006F1440 /* navi_start.png in Resources */,
+				0A5BB98E1B7F3D0500563CF8 /* 多媒体-照片-选中.png in Resources */,
+				0A16D7F21B818D01006F1440 /* Icon@2x.png in Resources */,
+				0A5BB9801B7F3D0500563CF8 /* 主-发送数据-选中.png in Resources */,
+				0A16D7FA1B81ADF6006F1440 /* btn_location_normal.png in Resources */,
+				0A5BB9A91B7F3D0500563CF8 /* 返回-选中.png in Resources */,
+				0A5BB9811B7F3D0500563CF8 /* 主-多媒体-未选.png in Resources */,
+				0A5BB9A81B7F3D0500563CF8 /* 返回-当前.png in Resources */,
+				0A5BB9971B7F3D0500563CF8 /* 标绘-手绘面-选中.png in Resources */,
+				0A5BB9921B7F3D0500563CF8 /* 多媒体-音频-选中.png in Resources */,
+				0A5BB9931B7F3D0500563CF8 /* 标绘-弹出框.png in Resources */,
+				0A5BB9841B7F3D0500563CF8 /* 主-文本信息-选中.png in Resources */,
+				0A5BB98D1B7F3D0500563CF8 /* 多媒体-照片-未选】.png in Resources */,
+				0A5BB97E1B7F3D0500563CF8 /* 主-位置上传-选中.png in Resources */,
+				0A5BB9A11B7F3D0500563CF8 /* 照片-拍照.png in Resources */,
+				0A5BB98A1B7F3D0500563CF8 /* 主-消息查看-选中.png in Resources */,
+				0A5BB99F1B7F3D0500563CF8 /* 标绘-箭头-选中.png in Resources */,
+				0A5BB99B1B7F3D0500563CF8 /* 标绘-涂鸦-选中.png in Resources */,
+				0A5BB9A51B7F3D0500563CF8 /* 视频-停止.png in Resources */,
+				0A5BB9891B7F3D0500563CF8 /* 主-消息查看-未选.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A5BB9021B7F3B3600563CF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFF83BC1B846099008D4163 /* MQToolKit.m in Sources */,
+				0A5BB9121B7F3B3600563CF8 /* ViewController.m in Sources */,
+				0A16D7E91B818A95006F1440 /* Toast.m in Sources */,
+				0A16D8011B81B17A006F1440 /* MapManager.m in Sources */,
+				0A800A731B82BC9700316474 /* MuiColManager.m in Sources */,
+				0AFF83A71B84155F008D4163 /* ArrowCollectionView.m in Sources */,
+				0A16D7E81B818A95006F1440 /* Toast+UIView.m in Sources */,
+				0A95483F1B85D33900C27105 /* TxtLookUp.m in Sources */,
+				0AFF83B81B845EDC008D4163 /* MQManager.m in Sources */,
+				0A9548461B85DC4E00C27105 /* TxtLookUpCell.m in Sources */,
+				0A800A761B83211000316474 /* PlotManager.m in Sources */,
+				0A5BB90F1B7F3B3600563CF8 /* AppDelegate.m in Sources */,
+				0A5BB90C1B7F3B3600563CF8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A5BB9131B7F3B3600563CF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A5BB9141B7F3B3600563CF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A5BB9181B7F3B3600563CF8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A5BB9191B7F3B3600563CF8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A5BB9271B7F3B3600563CF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		0A5BB9281B7F3B3600563CF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A5BB92A1B7F3B3600563CF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/SuperMap/SDKs",
+					"$(LOCAL_LIBRARY_DIR)/SuperMap/SDKs/iPhoneOS.sdk",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Library/SuperMap/SDKs/iPhoneOS.sdk/SuperMap.framework/Headers,
+					/Library/SuperMap/SDKs/MessageQueue.framework/Headers,
+				);
+				INFOPLIST_FILE = MessageDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/zip",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fshort-wchar";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		0A5BB92B1B7F3B3600563CF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/SuperMap/SDKs",
+					"$(LOCAL_LIBRARY_DIR)/SuperMap/SDKs/iPhoneOS.sdk",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Library/SuperMap/SDKs/iPhoneOS.sdk/SuperMap.framework/Headers,
+					/Library/SuperMap/SDKs/MessageQueue.framework/Headers,
+				);
+				INFOPLIST_FILE = MessageDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/zip",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fshort-wchar";
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A5BB9011B7F3B3600563CF8 /* Build configuration list for PBXProject "MessageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A5BB9271B7F3B3600563CF8 /* Debug */,
+				0A5BB9281B7F3B3600563CF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A5BB9291B7F3B3600563CF8 /* Build configuration list for PBXNativeTarget "MessageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A5BB92A1B7F3B3600563CF8 /* Debug */,
+				0A5BB92B1B7F3B3600563CF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A5BB8FE1B7F3B3600563CF8 /* Project object */;
+}
